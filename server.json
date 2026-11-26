@@ -1,0 +1,40 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.deepakshe/bulk-email-verifier-mx-smtp-mcp-api",
+  "title": "Bulk Email Verifier & MX/SMTP Deliverability Checker MCP Server",
+  "description": "Verify thousands of B2B email addresses with direct DNS MX lookups, SMTP handshake simulation, and disposable domain detection. $0 proxy fees and <50ms checks.",
+  "version": "1.0.0",
+  "websiteUrl": "https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp",
+  "repository": {
+    "url": "https://github.com/deepakshe/bulk-email-verifier-mx-smtp-mcp-api",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "npm",
+      "registryBaseUrl": "https://registry.npmjs.org",
+      "identifier": "@apify/actors-mcp-server",
+      "version": "latest",
+      "runtimeHint": "npx",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "APIFY_TOKEN",
+          "description": "Your Apify API Token ($5 free monthly allowance included)",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ],
+  "remotes": [
+    {
+      "transport": {
+        "type": "streamable-http",
+        "url": "https://mcp.apify.com/?tools=deepaksheoran172/bulk-email-verifier-mx-smtp"
+      }
+    }
+  ]
+}

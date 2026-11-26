@@ -1,0 +1,8 @@
+{
+  "$schema": "https://glama.ai/mcp/schemas/server.json",
+  "maintainers": [
+    "deepakshe"
+  ],
+  "name": "bulk-email-verifier-mx-smtp-mcp-api",
+  "description": "Verify thousands of B2B email addresses with direct DNS MX lookups, SMTP handshake simulation, and disposable domain detection. $0 proxy fees and <50ms checks."
+}

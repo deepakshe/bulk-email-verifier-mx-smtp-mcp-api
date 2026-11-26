@@ -1,0 +1,18 @@
+# Smithery.ai MCP Server Manifest
+name: bulk-email-verifier-mx-smtp-mcp-api
+version: 1.0.0
+description: "Verify thousands of B2B email addresses with direct DNS MX lookups, SMTP handshake simulation, and disposable domain detection. $0 proxy fees and <50ms checks."
+startCommand:
+  type: stdio
+  config:
+    command: npx
+    args:
+      - "-y"
+      - "@apify/actors-mcp-server"
+      - "--actors"
+      - "deepaksheoran172/bulk-email-verifier-mx-smtp"
+    env:
+      APIFY_TOKEN:
+        type: string
+        description: "Your Apify API Token ($5/month free credits included)"
+        required: true

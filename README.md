@@ -1,6 +1,7 @@
 # Bulk Email Verifier MX & SMTP MCP Server & Python API
 
 [![Apify Store](https://img.shields.io/badge/Apify_Store-Run_on_Apify-blue?style=for-the-badge&logo=apify)](https://apify.com/deepaksheoran172/bulk-email-verifier-mx-smtp)
+[![deepakshe/bulk-email-verifier-mx-smtp-mcp-api MCP server](https://glama.ai/mcp/servers/deepakshe/bulk-email-verifier-mx-smtp-mcp-api/badges/score.svg)](https://glama.ai/mcp/servers/deepakshe/bulk-email-verifier-mx-smtp-mcp-api)
 [![MCP Server](https://img.shields.io/badge/MCP-Model_Context_Protocol-purple?style=for-the-badge)](https://modelcontextprotocol.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
 [![Hub](https://img.shields.io/badge/Live_Catalog-B2B_Scrapers_Hub-emerald?style=for-the-badge)](https://deepakshe.github.io/b2b-mcp-apify-scrapers-hub/)
@@ -24,6 +25,27 @@
   }
 ]
 ```
+
+---
+
+## 🤖 1-Click MCP Config (Claude Desktop, Cursor, Windsurf)
+
+```json
+{
+  "mcpServers": {
+    "bulk-email-verifier-mx-smtp": {
+      "command": "npx",
+      "args": ["-y", "@apify/actors-mcp-server", "--actors", "deepaksheoran172/bulk-email-verifier-mx-smtp"],
+      "env": {
+        "APIFY_TOKEN": "YOUR_APIFY_TOKEN"
+      }
+    }
+  }
+}
+```
+
+* **Remote Streamable HTTP MCP:** `https://mcp.apify.com/?tools=deepaksheoran172/bulk-email-verifier-mx-smtp`
+* **AI Crawler Spec (`llms.txt`):** [llms.txt](./llms.txt)
 
 ---
 
